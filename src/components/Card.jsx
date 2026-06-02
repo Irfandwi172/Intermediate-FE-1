@@ -1,4 +1,3 @@
-import React from "react";
 import "../style/Card.css";
 import { NavLink } from "react-router-dom";
 import Button from "./button";
@@ -18,15 +17,23 @@ const Card = () => {
 
         <form action="">
           <div className="form-group">
-            <label htmlFor="email">E-Mail <span className="required">*</span></label>
+            <label htmlFor="email">
+              E-Mail <span className="required">*</span>
+            </label>
             <input type="email" id="email" placeholder="" />
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Kata Sandi <span className="required">*</span></label>
+            <label htmlFor="password">
+              Kata Sandi <span className="required">*</span>
+            </label>
             <div className="password-wrapper">
               <input type={showPassword ? "text" : "password"} />
-              <button type="button" className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
+              <button
+                type="button"
+                className="toggle-password"
+                onClick={() => setShowPassword(!showPassword)}
+              >
                 <img src={showPassword ? hide : show} alt="" />
               </button>
             </div>
@@ -36,7 +43,7 @@ const Card = () => {
           </div>
 
           {/* Button dipindah ke sini, di luar form-group */}
-          <Button 
+          <Button
             loginTo="/home"
             registerTo="/register"
             loginLabel="Masuk"

@@ -131,7 +131,6 @@
   transition: all 0.3s;
 }
 
-
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -159,7 +158,6 @@
   font-weight: 600;
 }
 
-
 @media (max-width: 768px) {
   .desktop-only {
     display: none;
@@ -173,7 +171,6 @@
     display: flex;
   }
 }
-
 
 @media (max-width: 600px) {
   .header-nav {

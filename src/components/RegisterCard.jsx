@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../style/registerCard.css";
-import google from "../assets/google.png";
 import { NavLink } from "react-router-dom";
 import hide from "../assets/hide.png";
 import show from "../assets/show.png";
@@ -71,7 +70,7 @@ const RegisterCard = () => {
                   ))}
                 </select>
               </div>
-              <input type="text" placeholder="" /> {/* ← input nomor di sini */}
+              <input type="text" placeholder="" />
             </div>
           </div>
 
@@ -109,13 +108,12 @@ const RegisterCard = () => {
               <NavLink to="#">Lupa Password?</NavLink>
             </div>
           </div>
-        <Button 
-        loginTo="/login"
-        registerTo="/login"
-        loginLabel="Daftar"
-        registerLabel="Masuk"
-        
-        />
+          <Button
+            loginTo="/login"
+            registerTo="/login"
+            loginLabel="Daftar"
+            registerLabel="Masuk"
+          />
         </form>
       </div>
     </main>

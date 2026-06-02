@@ -63,7 +63,7 @@
 
 .phone-wrapper {
   display: flex;
-  flex-direction: row;  /* ← ubah dari column ke row */
+  flex-direction: row; /* ← ubah dari column ke row */
   gap: 8px;
   align-items: center;
 }
@@ -257,7 +257,7 @@
     align-items: flex-start;
   }
 
- .register-card {
+  .register-card {
     width: 100%;
     max-width: 100%;
     padding: 20px 16px;

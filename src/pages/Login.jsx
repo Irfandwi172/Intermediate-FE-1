@@ -1,13 +1,7 @@
-import Card from "../components/card"
-import Header from "../components/Header"
+import Card from "../components/card";
 
 const LoginPage = () => {
-    return (
-        <>  
-        <Card />
-        </>
-      
-    )
-}
+  return <Card />;
+};
 
-export default LoginPage
+export default LoginPage;

@@ -1,12 +1,12 @@
-import { NavLink } from "react-router"
-import CardCollection from "../components/CardCollection"
-import heroBg from "../assets/Belajar-Online.jpg"
-import "../style/Home.css"
-import Footer from "../components/Footer"
+import { NavLink } from "react-router";
+import CardCollection from "../components/CardCollection";
+import heroBg from "../assets/Belajar-Online.jpg";
+import "../style/Home.css";
+import Footer from "../components/Footer";
 const HomePage = () => {
-    return (
-        <>
-        <section className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
+  return (
+    <>
+      <section className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1>
@@ -19,7 +19,9 @@ const HomePage = () => {
             berpartisipasi dalam latihan interaktif yang akan meningkatkan
             pemahaman Anda.
           </p>
-          <NavLink href="" className="btn-hero">Temukan Video Course untuk Dipelajari!</NavLink>
+          <NavLink href="" className="btn-hero">
+            Temukan Video Course untuk Dipelajari!
+          </NavLink>
         </div>
       </section>
       <section className="collect">
@@ -28,7 +30,9 @@ const HomePage = () => {
           Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!
         </p>
         <nav className="filter-nav">
-          <a href="" className="active">Semua Kelas</a>
+          <a href="" className="active">
+            Semua Kelas
+          </a>
           <a href="">Pemasaran</a>
           <a href="">Desain</a>
           <a href="">Pengembangan Diri</a>
@@ -36,7 +40,10 @@ const HomePage = () => {
         </nav>
       </section>
       <CardCollection />
-      <section className="newsletter" style={{ backgroundImage: `url(${heroBg})` }}>
+      <section
+        className="newsletter"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
         <div className="newsletter-inner">
           <p className="nl-label">NEWSLETTER</p>
           <h3>Mau Belajar Lebih Banyak?</h3>
@@ -51,8 +58,8 @@ const HomePage = () => {
         </div>
       </section>
       <Footer />
-        </>
-    )
-}
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
